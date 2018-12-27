@@ -1,7 +1,13 @@
-.box {
+.square {
   width: 200px;
-  height: 100px;
-  background-color: #00ff00; }
+  height: 200px;
+  background-color: #ff8000; }
+
+.circle {
+  width: 200px;
+  height: 200px;
+  background-color: #ffff00;
+  border-radius: 100px; }
 
 .container-1 {
   background-color: #0099ff; }
@@ -14,5 +20,9 @@
 
 .container-4 {
   background-color: #ff9900; }
+
+.square, .circle {
+  font-family: fantasy;
+  text-align: center; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,11 +1,24 @@
-@mixin box ($size, $background-color) {
+@mixin square ($size, $background-color) {
     width: $size;
-    height: $size/2;
+    height: $size;
     background-color: $background-color;
 }
 
-.box {
-    @include box (200px, #00ff00);
+.square {
+    @include square (200px, #ff8000);
+    @extend %font-text;
+}
+
+@mixin circle ($size, $background-color) {
+    width: $size;
+    height: $size;
+    background-color: $background-color;
+    border-radius: 100px;
+}
+
+.circle {
+    @include circle (200px, #ffff00);
+    @extend %font-text;
 }
 
 
@@ -17,4 +30,11 @@ $colors: #0099ff, #0000ff, #00ffff, #ff9900;
     .container-#{$i} {
         background-color: $color;
     }
+}
+
+// placeholder
+
+%font-text {
+    font-family: fantasy;
+    text-align: center;
 }
