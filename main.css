@@ -1,27 +1,28 @@
-.wrapper .main {
-  width: 300px;
-  height: 300px;
-  background-color: yellow; }
+h1 {
+  font-size: 2em; }
 
-p {
-  font-family: open-sans;
-  font-size: 30px;
-  font-weight: 500;
-  text-align: center;
-  text-transform: uppercase; }
+/* Code used beyond that point */
+.item-black {
+  background-color: #000000; }
+
+.item-red {
+  background-color: #e84610; }
+
+.item-green {
+  background-color: #bada55; }
+
+body {
+  background-color: #000000; }
 
 div {
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat; }
+  width: 300px;
+  height: 500px;
+  border: 1px solid #000000; }
 
-.container {
-  background-image: url("https://dummyimage.com/450x250/f00/fff"); }
+h1 {
+  color: #ffffff; }
 
-.article {
-  background-image: url("https://dummyimage.com/450x250/000/fff"); }
-
-.post {
-  background-image: url("https://dummyimage.com/450x250/ddd/fff"); }
+div.container {
+  background-color: orange; }
 
 /*# sourceMappingURL=main.css.map */
