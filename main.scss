@@ -7,3 +7,14 @@
 .box {
     @include box (200px, #00ff00);
 }
+
+
+// container class
+$colors: #0099ff, #0000ff, #00ffff, #ff9900;
+
+@each $color in $colors {
+    $i: index($colors, $color);
+    .container-#{$i} {
+        background-color: $color;
+    }
+}
